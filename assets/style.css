@@ -83,7 +83,7 @@ a:focus-visible {
 .utility-bar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 1rem;
   padding-block: 0.7rem;
   font-size: 0.88rem;
@@ -111,17 +111,9 @@ a:focus-visible {
 .primary-nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 1.5rem;
   padding-block: 1rem;
-}
-
-.brand {
-  color: var(--text);
-  font-size: 1.05rem;
-  font-weight: 750;
-  letter-spacing: 0.01em;
-  text-decoration: none;
 }
 
 .nav-links {
@@ -206,9 +198,14 @@ h1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
   gap: 1rem;
+  max-width: var(--content-width);
 }
 
 .app-card {
+  display: grid;
+  grid-template-columns: 5.5rem minmax(0, 1fr);
+  align-items: start;
+  gap: 1.25rem;
   min-height: 13rem;
   padding: clamp(1.35rem, 3vw, 1.8rem);
   background: var(--surface);
@@ -216,22 +213,46 @@ h1 {
   border-radius: 0.75rem;
 }
 
-.app-card h3 {
+.app-card-body h3 {
   margin: 0 0 0.65rem;
   font-size: 1.3rem;
 }
 
-.app-card p {
+.app-card-body p {
   margin: 0;
   color: var(--muted);
 }
 
-.app-card a {
+.app-card-body a {
   display: inline-flex;
   min-height: 2.75rem;
   align-items: center;
   margin-top: 1.1rem;
   font-weight: 700;
+}
+
+.app-icon {
+  display: block;
+  width: 5.5rem;
+  height: 5.5rem;
+  background: #edf5f7;
+  border-radius: 1.25rem;
+  box-shadow:
+    0 0 0 1px rgba(49, 86, 110, 0.1),
+    0 0.5rem 1.25rem rgba(32, 37, 34, 0.1);
+}
+
+.app-hero {
+  display: grid;
+  grid-template-columns: 8rem minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.app-icon-large {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 1.8rem;
 }
 
 .content-sections {
@@ -358,8 +379,7 @@ h1 {
   }
 
   .utility-bar {
-    flex-direction: column-reverse;
-    gap: 0.35rem;
+    justify-content: flex-start;
   }
 
   .primary-nav {
@@ -383,6 +403,19 @@ h1 {
   .footer-inner {
     flex-direction: column;
     gap: 0.25rem;
+  }
+}
+
+@media (max-width: 30rem) {
+  .app-card,
+  .app-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .app-icon-large {
+    width: 6.5rem;
+    height: 6.5rem;
+    border-radius: 1.5rem;
   }
 }
 
