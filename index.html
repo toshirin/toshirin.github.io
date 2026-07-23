@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <title>toshirin Apps</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <noscript>
+      <meta http-equiv="refresh" content="0; url=./ja/">
+    </noscript>
+    <script>
+      (() => {
+        const languages = navigator.languages || [navigator.language || ""];
+        const hasJapanese = languages.some((language) =>
+          /^ja(?:-|$)/i.test(language)
+        );
+
+        location.replace(hasJapanese ? "./ja/" : "./en/");
+      })();
+    </script>
+  </head>
+  <body>
+    <main class="redirect-page">
+      <div class="redirect-card">
+        <p class="eyebrow">toshirin Apps</p>
+        <h1>Select your language</h1>
+        <p lang="ja">ページが移動しない場合は、言語を選択してください。</p>
+        <p>If you are not redirected, choose your language.</p>
+        <nav class="language-choice" aria-label="Language selection">
+          <a class="button" href="./ja/" lang="ja">日本語</a>
+          <a class="button button-secondary" href="./en/" lang="en">English</a>
+        </nav>
+      </div>
+    </main>
+  </body>
+</html>
