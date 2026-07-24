@@ -240,7 +240,7 @@ h1 {
   display: block;
   width: 5.5rem;
   height: 5.5rem;
-  background: #edf5f7;
+  background: transparent;
   border-radius: 1.25rem;
   box-shadow:
     0 0 0 1px rgba(49, 86, 110, 0.1),
