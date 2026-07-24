@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="みえつみで積み木を組み立て、回転、視点切り替え、透明表示、色付け、写真保存を行う基本操作を説明します。"
+    >
+    <title>基本的な使い方｜みえつみ</title>
+    <link rel="stylesheet" href="../../assets/style.css">
+    <link rel="alternate" hreflang="ja" href="./guide.html">
+    <link rel="alternate" hreflang="en" href="../../en/mietsumi/guide.html">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">本文へ移動</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="utility-bar">
+          <nav class="language-switcher" aria-label="言語切り替え">
+            <a href="./guide.html" lang="ja" aria-current="page">日本語</a>
+            <span aria-hidden="true">|</span>
+            <a href="../../en/mietsumi/guide.html" lang="en">English</a>
+          </nav>
+        </div>
+        <nav class="primary-nav" aria-label="みえつみナビゲーション">
+          <ul class="nav-links mietsumi-nav">
+            <li><a href="../">トップ</a></li>
+            <li><a href="./">みえつみ</a></li>
+            <li><a href="./guide.html" aria-current="page">使い方</a></li>
+            <li><a href="./learning.html">積み木問題での使い方</a></li>
+            <li><a href="./plans.html">無料版とフル版</a></li>
+            <li><a href="./privacy.html">プライバシー</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page support-page" id="main">
+      <header class="hero support-header">
+        <p class="eyebrow">MieTsumi Guide</p>
+        <h1>基本的な使い方</h1>
+        <p class="lead">
+          各マスに積む個数を指定して形を作り、3D表示を動かして確かめます。
+        </p>
+      </header>
+
+      <article class="support-content">
+        <section aria-labelledby="build-title">
+          <h2 id="build-title">1. 積み木を組み立てる</h2>
+          <p>「たかさ（下が手前）」のマスをタップして、それぞれの場所に積む個数を指定します。</p>
+          <p>
+            入力したマスの位置と、3D画面上の積み木の位置を見比べながら形を作ります。積み木の合計個数は、アプリ名の下に表示されます。
+          </p>
+          <figure class="media-figure">
+            <img
+              src="../../assets/images/mietsumi/web/overview.png"
+              alt="5個の積み木を斜め上から表示し、高さ入力用の3×3のマスが並んでいる、みえつみの画面"
+              width="480"
+              height="1040"
+              loading="lazy"
+            >
+            <figcaption>
+              高さのマスを使って積み木を配置します。画面では合計個数も確認できます。
+            </figcaption>
+          </figure>
+        </section>
+
+        <section aria-labelledby="size-title">
+          <h2 id="size-title">2. 大きさを選ぶ</h2>
+          <p>積み木を置く範囲は、次の大きさから選択できます。</p>
+          <ul class="compact-list">
+            <li>3×3×3</li>
+            <li>5×5×5</li>
+            <li>7×7×7</li>
+          </ul>
+          <p>無料版とフル版で利用できる大きさが異なる予定です。</p>
+        </section>
+
+        <section aria-labelledby="move-title">
+          <h2 id="move-title">3. 回転・拡大する</h2>
+          <p>
+            3D表示をドラッグすると積み木を自由に回転でき、ピンチ操作で拡大・縮小できます。
+          </p>
+          <p>形の奥側や、積み木が重なっている部分を確かめたいときに利用します。</p>
+        </section>
+
+        <section aria-labelledby="view-title">
+          <h2 id="view-title">4. 見る方向を切り替える</h2>
+          <p>「してん」では、次の方向へすぐに切り替えられます。</p>
+          <ul class="compact-list">
+            <li>斜め</li>
+            <li>正面</li>
+            <li>左</li>
+            <li>右</li>
+            <li>後ろ</li>
+            <li>真上</li>
+          </ul>
+          <figure class="media-figure">
+            <img
+              src="../../assets/images/mietsumi/web/front-view.png"
+              alt="積み木を低い正面方向から表示し、その下に斜め、正面、左、右、後ろ、真上の視点ボタンが並ぶ画面"
+              width="480"
+              height="1040"
+              loading="lazy"
+            >
+            <figcaption>
+              同じ積み木を正面や左右、後ろ、真上などから確認できます。
+            </figcaption>
+          </figure>
+        </section>
+
+        <section aria-labelledby="display-title">
+          <h2 id="display-title">5. 表示方法を変える</h2>
+          <p>「ひょうじ」では、通常・透け・線の3種類を切り替えられます。</p>
+          <h3>通常</h3>
+          <p>積み木の面を通常どおり表示します。</p>
+          <h3>透け</h3>
+          <p>
+            積み木を半透明にして、手前の積み木に隠れている部分を確認しやすくします。
+          </p>
+          <figure class="media-figure">
+            <img
+              src="../../assets/images/mietsumi/web/transparent.png"
+              alt="積み木が半透明になり、重なった内部の輪郭が見えている、みえつみの透け表示"
+              width="480"
+              height="1040"
+              loading="lazy"
+            >
+            <figcaption>
+              「透け」表示では、重なった積み木の位置関係を確認しやすくなります。
+            </figcaption>
+          </figure>
+          <h3>線</h3>
+          <p>
+            積み木の輪郭を中心に表示します。立体の境界や重なり方を確認するときに利用できます。
+          </p>
+          <figure class="media-figure">
+            <img
+              src="../../assets/images/mietsumi/web/wireframe.png"
+              alt="積み木の面が薄くなり、輪郭線を中心に形が表示されている、みえつみの線表示"
+              width="480"
+              height="1040"
+              loading="lazy"
+            >
+            <figcaption>
+              「線」表示では、積み木の輪郭を使って形を確かめられます。
+            </figcaption>
+          </figure>
+        </section>
+
+        <section aria-labelledby="color-title">
+          <h2 id="color-title">6. 色を付ける</h2>
+          <p>
+            「いろ」で色を選び、3D画面の積み木をタップすると、その積み木を選んだ色で塗れます。
+          </p>
+          <p>
+            位置ごとに色を分けたり、同じ高さの積み木を同じ色にしたりすると、形を整理して考えやすくなります。
+          </p>
+        </section>
+
+        <section aria-labelledby="count-title">
+          <h2 id="count-title">7. 数を表示する</h2>
+          <p>
+            「かずを表示」をONにすると、アプリ名の下に積み木の合計個数が表示されます。
+          </p>
+          <p>
+            アンテナについては<a href="./learning.html#antenna">積み木問題での使い方</a>で詳しく説明します。
+          </p>
+        </section>
+
+        <section aria-labelledby="reset-title">
+          <h2 id="reset-title">8. 色や位置を元に戻す</h2>
+          <p>
+            「↺ いろ」を押すと、積み木の配置を変えずに、すべての積み木を白へ戻します。
+          </p>
+          <p>
+            「⌂ してん」は視点を斜めの位置へ戻します。「ひかり」がONのときは「⌂
+            ひかり」となり、光を初期の位置へ戻します。
+          </p>
+        </section>
+
+        <section aria-labelledby="clear-title">
+          <h2 id="clear-title">9. 全部消す</h2>
+          <p>「ぜんぶ消す」を利用すると、配置した積み木と色をすべて削除できます。</p>
+          <p>
+            積み木が置かれている場合は、「ぜんぶ消しますか？」という確認画面が表示されます。
+          </p>
+        </section>
+
+        <section aria-labelledby="photo-title">
+          <h2 id="photo-title">10. 写真に保存する</h2>
+          <p>
+            「しゃしん」を押すと、現在表示している積み木を画像として写真ライブラリへ保存できます。
+          </p>
+          <p>
+            初回に写真への追加許可が表示された場合は許可してください。保存は利用者がボタンを押したときだけ行われ、画像が開発者へ送信されることはありません。
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-content">
+          <nav class="footer-nav" aria-label="フッターナビゲーション">
+            <a href="../">共通トップ</a>
+            <a href="./">みえつみトップ</a>
+            <a
+              href="mailto:toshirin.support@gmail.com?subject=%5B%E3%81%BF%E3%81%88%E3%81%A4%E3%81%BF%5D%20%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B"
+            >toshirin.support@gmail.com</a>
+          </nav>
+          <div class="footer-meta">
+            <p>© toshirin</p>
+            <nav class="footer-language" aria-label="言語切り替え">
+              <a href="./guide.html" lang="ja" aria-current="page">日本語</a>
+              <span aria-hidden="true">|</span>
+              <a href="../../en/mietsumi/guide.html" lang="en">English</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

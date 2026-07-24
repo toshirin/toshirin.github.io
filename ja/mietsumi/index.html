@@ -3,9 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="みえつみのサポートページです。">
-    <title>みえつみ | Apps by toshirin</title>
+    <meta
+      name="description"
+      content="みえつみは、積み木を3Dで組み立て、回転や視点切り替え、透明表示、アンテナ、光と影を使って立体を確かめられる学習アプリです。"
+    >
+    <title>みえつみ｜積み木を見て、動かして、考える</title>
     <link rel="stylesheet" href="../../assets/style.css">
+    <link rel="alternate" hreflang="ja" href="./">
+    <link rel="alternate" hreflang="en" href="../../en/mietsumi/">
   </head>
   <body>
     <a class="skip-link" href="#main">本文へ移動</a>
@@ -18,70 +23,153 @@
             <a href="../../en/mietsumi/" lang="en">English</a>
           </nav>
         </div>
-        <nav class="primary-nav" aria-label="メインナビゲーション">
-          <ul class="nav-links">
+        <nav class="primary-nav" aria-label="みえつみナビゲーション">
+          <ul class="nav-links mietsumi-nav">
             <li><a href="../">トップ</a></li>
             <li><a href="./" aria-current="page">みえつみ</a></li>
+            <li><a href="./guide.html">使い方</a></li>
+            <li><a href="./learning.html">積み木問題での使い方</a></li>
+            <li><a href="./plans.html">無料版とフル版</a></li>
+            <li><a href="./privacy.html">プライバシー</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main class="page" id="main">
-      <section class="hero app-hero" aria-labelledby="page-title">
+    <main class="page support-page" id="main">
+      <header class="hero app-hero support-header">
         <img
           class="app-icon app-icon-large"
           src="../../assets/mietsumi-icon.svg"
-          alt=""
+          alt="みえつみのアプリアイコン"
           width="128"
           height="128"
         >
         <div>
-          <p class="eyebrow">App Support</p>
-          <h1 id="page-title">みえつみ</h1>
-          <p class="lead">
-            奥に隠れた積み木や立体の向きを理解しながら、自由に作品を作って遊べる3D積み木アプリです。
-          </p>
+          <p class="eyebrow">3D Building Blocks</p>
+          <h1>みえつみ</h1>
+          <p class="lead"><strong>積み木を見て、動かして、考える。</strong></p>
         </div>
-      </section>
+      </header>
 
-      <div class="content-sections">
-        <section class="content-section" id="overview">
-          <h2>アプリ概要</h2>
+      <article class="support-content">
+        <section aria-labelledby="overview-title">
+          <h2 id="overview-title">立体をいろいろな方向から確かめる</h2>
           <p>
-            画面上の積み木を動かして、さまざまな向きから立体を確かめられます。詳しい紹介は準備中です。
+            みえつみは、画面の中に積み木を組み立て、いろいろな方向から確かめられる3D積み木アプリです。
           </p>
-        </section>
-        <section class="content-section" id="features">
-          <h2>主な機能</h2>
-          <p>主な機能のご案内は準備中です。</p>
-        </section>
-        <section class="content-section" id="usage">
-          <h2>使い方</h2>
-          <p>使い方のご案内は準備中です。</p>
-        </section>
-        <section class="content-section" id="faq">
-          <h2>よくある質問</h2>
-          <p>よくある質問は準備中です。</p>
-        </section>
-        <section class="content-section" id="privacy">
-          <h2>プライバシーポリシー</h2>
-          <p>プライバシーポリシーは準備中です。</p>
-        </section>
-        <section class="content-section" id="contact">
-          <h2>お問い合わせ</h2>
           <p>
-            <a
-              href="mailto:toshirin.support@gmail.com?subject=%5B%E3%81%BF%E3%81%88%E3%81%A4%E3%81%BF%5D%20%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B"
-            >toshirin.support@gmail.com</a>
+            積み木を自由に回転させたり、正面・左右・後ろ・真上から見たりすることで、平面の図だけでは分かりにくい立体の形を確かめられます。
           </p>
+          <p>
+            積み木の個数を考える問題や、見る方向によって形がどう変わるかを考える問題、光と影の向きを考える学習にも活用できます。
+          </p>
+          <figure class="media-figure">
+            <img
+              src="../../assets/images/mietsumi/web/overview.png"
+              alt="5個の積み木を斜め上から表示し、高さ入力用の3×3のマスが並んでいる、みえつみの画面"
+              width="480"
+              height="1040"
+            >
+            <figcaption>
+              積み木の高さをマスごとに指定し、3Dで形を確かめられます。
+            </figcaption>
+          </figure>
         </section>
-      </div>
+
+        <section aria-labelledby="features-title">
+          <h2 id="features-title">できること</h2>
+          <div class="feature-grid">
+            <section class="feature-card">
+              <h3>積み木を組み立てる</h3>
+              <p>
+                マスごとに高さを指定して、積み木を組み立てます。積み木の合計個数も画面で確認できます。
+              </p>
+            </section>
+            <section class="feature-card">
+              <h3>いろいろな方向から見る</h3>
+              <p>
+                自由に回転・拡大できるほか、斜め、正面、左、右、後ろ、真上の視点へ切り替えられます。
+              </p>
+            </section>
+            <section class="feature-card">
+              <h3>見えない部分を確かめる</h3>
+              <p>
+                通常表示のほか、積み木を半透明にする「透け」と、輪郭を中心に表示する「線」を利用できます。
+              </p>
+            </section>
+            <section class="feature-card">
+              <h3>色を付ける</h3>
+              <p>
+                色を選び、積み木をタップして色を付けられます。形のまとまりや位置関係の確認にも使えます。
+              </p>
+            </section>
+            <section class="feature-card">
+              <h3>アンテナで個数を数える</h3>
+              <p>
+                各列の上に、積まれている積み木の個数と同じ本数の縦線を表示できます。線を一本ずつ数えて確認できます。
+              </p>
+            </section>
+            <section class="feature-card">
+              <h3>光と影を動かす</h3>
+              <p>
+                光の位置を動かし、積み木にできる影の向きや形を確かめられます。
+              </p>
+            </section>
+            <section class="feature-card">
+              <h3>写真に保存する</h3>
+              <p>作った積み木を画像として写真ライブラリへ保存できます。</p>
+            </section>
+          </div>
+        </section>
+
+        <section aria-labelledby="details-title">
+          <h2 id="details-title">詳しい使い方</h2>
+          <div class="link-card-grid">
+            <article class="link-card">
+              <h3>基本的な使い方</h3>
+              <p>積み木の置き方、視点、表示、色、写真保存について説明します。</p>
+              <a href="./guide.html">使い方を見る →</a>
+            </article>
+            <article class="link-card">
+              <h3>積み木問題での使い方</h3>
+              <p>個数の数え方、見る方向による形、アンテナ、光と影について説明します。</p>
+              <a href="./learning.html">学習での使い方を見る →</a>
+            </article>
+            <article class="link-card">
+              <h3>無料版とフル版</h3>
+              <p>無料で利用できる機能と、フル版で追加される予定の機能を説明します。</p>
+              <a href="./plans.html">機能とよくある質問を見る →</a>
+            </article>
+            <article class="link-card">
+              <h3>プライバシーポリシー</h3>
+              <p>データや写真の取り扱いについて説明します。</p>
+              <a href="./privacy.html">プライバシーポリシーを見る →</a>
+            </article>
+          </div>
+        </section>
+      </article>
     </main>
 
     <footer class="site-footer">
       <div class="footer-inner">
-        <p>© toshirin</p>
+        <div class="footer-content">
+          <nav class="footer-nav" aria-label="フッターナビゲーション">
+            <a href="../">共通トップ</a>
+            <a href="./">みえつみトップ</a>
+            <a
+              href="mailto:toshirin.support@gmail.com?subject=%5B%E3%81%BF%E3%81%88%E3%81%A4%E3%81%BF%5D%20%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B"
+            >toshirin.support@gmail.com</a>
+          </nav>
+          <div class="footer-meta">
+            <p>© toshirin</p>
+            <nav class="footer-language" aria-label="言語切り替え">
+              <a href="./" lang="ja" aria-current="page">日本語</a>
+              <span aria-hidden="true">|</span>
+              <a href="../../en/mietsumi/" lang="en">English</a>
+            </nav>
+          </div>
+        </div>
       </div>
     </footer>
   </body>

@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="小学校受験の積み木問題で、積み木の個数、前後左右や上から見た形、アンテナ、光と影を確かめる使い方を説明します。"
+    >
+    <title>積み木問題での使い方｜みえつみ</title>
+    <link rel="stylesheet" href="../../assets/style.css">
+    <link rel="alternate" hreflang="ja" href="./learning.html">
+    <link rel="alternate" hreflang="en" href="../../en/mietsumi/learning.html">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">本文へ移動</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="utility-bar">
+          <nav class="language-switcher" aria-label="言語切り替え">
+            <a href="./learning.html" lang="ja" aria-current="page">日本語</a>
+            <span aria-hidden="true">|</span>
+            <a href="../../en/mietsumi/learning.html" lang="en">English</a>
+          </nav>
+        </div>
+        <nav class="primary-nav" aria-label="みえつみナビゲーション">
+          <ul class="nav-links mietsumi-nav">
+            <li><a href="../">トップ</a></li>
+            <li><a href="./">みえつみ</a></li>
+            <li><a href="./guide.html">使い方</a></li>
+            <li><a href="./learning.html" aria-current="page">積み木問題での使い方</a></li>
+            <li><a href="./plans.html">無料版とフル版</a></li>
+            <li><a href="./privacy.html">プライバシー</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page support-page" id="main">
+      <header class="hero support-header">
+        <p class="eyebrow">Learning with MieTsumi</p>
+        <h1>積み木問題での使い方</h1>
+        <p class="lead">
+          実際に形を作って動かし、立体の見え方や考え方を確かめます。
+        </p>
+      </header>
+
+      <article class="support-content">
+        <section aria-labelledby="learning-intro">
+          <h2 id="learning-intro">考えたあとに、動かして確かめる</h2>
+          <p>
+            小学校受験（お受験）では、積み木の個数を数える問題や、前後左右・上から見た形を考える問題が出題されることがあります。
+          </p>
+          <p>みえつみは、問題の答えを自動で出すアプリではありません。</p>
+          <p>
+            問題と同じ形を実際に作り、動かしながら確かめることで、立体を頭の中で考える練習を補助します。
+          </p>
+        </section>
+
+        <section aria-labelledby="count-blocks-title">
+          <h2 id="count-blocks-title">積み木の個数を数える</h2>
+          <p>
+            積み木の問題では、絵に見えている積み木だけでなく、別の積み木の下や奥に隠れている積み木も考える必要があります。
+          </p>
+          <p>
+            まず問題と同じ形を作り、斜めから全体を確認します。次に、積み木を回転させたり、透け表示や線表示に切り替えたりして、隠れている部分を確かめます。
+          </p>
+          <div class="media-grid">
+            <figure class="media-figure">
+              <img
+                src="../../assets/images/mietsumi/web/transparent.png"
+                alt="積み木が半透明になり、重なった内部の輪郭が見えている、みえつみの透け表示"
+                width="480"
+                height="1040"
+                loading="lazy"
+              >
+              <figcaption>
+                透け表示では、手前の積み木越しに奥の位置を確かめられます。
+              </figcaption>
+            </figure>
+            <figure class="media-figure">
+              <img
+                src="../../assets/images/mietsumi/web/wireframe.png"
+                alt="積み木の面が薄くなり、輪郭線を中心に形が表示されている、みえつみの線表示"
+                width="480"
+                height="1040"
+                loading="lazy"
+              >
+              <figcaption>
+                線表示では、輪郭を使って重なり方を確かめられます。
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section id="antenna" aria-labelledby="antenna-title">
+          <h2 id="antenna-title">アンテナを使って数える</h2>
+          <p>
+            アンテナは、積み木の縦の列ごとに個数を数えるための補助表示です。
+          </p>
+          <p>
+            各列の一番上の積み木のさらに上に、その列に積まれている積み木の個数と同じ本数の短い縦線を表示します。
+          </p>
+          <p>
+            積み木が2個重なっている列には2本、1個だけの列には1本の縦線が表示されます。数字を使わず線を一本ずつ数えるため、数字がまだ読みづらい幼児でも利用できます。
+          </p>
+          <figure class="media-figure">
+            <img
+              src="../../assets/images/mietsumi/web/antenna.png"
+              alt="積み木の各列の一番上に、列の高さに対応する1本または2本の縦線が表示されているアンテナ画面"
+              width="480"
+              height="1040"
+              loading="lazy"
+            >
+            <figcaption>
+              アンテナの縦線の本数は、その場所に縦に積まれている積み木の個数を表します。
+            </figcaption>
+          </figure>
+
+          <h3>アンテナを使った数え方</h3>
+          <ol>
+            <li>問題と同じ形を作ります。</li>
+            <li>アンテナをONにします。</li>
+            <li>各列の上にある縦線を数えます。</li>
+            <li>すべての列の本数を合わせて、全体の個数を考えます。</li>
+            <li>必要に応じて透け表示や線表示で確かめます。</li>
+          </ol>
+          <div class="notice">
+            <p>
+              <strong>アンテナは積み木ではありません。</strong>
+              アンテナの線そのものを積み木の個数には含めません。
+            </p>
+          </div>
+        </section>
+
+        <section aria-labelledby="directions-title">
+          <h2 id="directions-title">前後左右・上から見た形を考える</h2>
+          <p>
+            積み木問題には、同じ立体を正面、後ろ、左、右、上から見たときの形を考えるものがあります。
+          </p>
+          <p>
+            みえつみでは、視点ボタンを使って、正面、左、右、後ろ、真上から見た形を確認できます。
+          </p>
+          <p>
+            形を確認した後、画面を見ずに同じ形を紙へ書いてみると、見る方向を頭の中で切り替える練習になります。
+          </p>
+          <div class="media-grid">
+            <figure class="media-figure">
+              <img
+                src="../../assets/images/mietsumi/web/overview.png"
+                alt="5個の積み木を斜め上から表示している、みえつみの画面"
+                width="480"
+                height="1040"
+                loading="lazy"
+              >
+              <figcaption>斜め上から見た積み木です。</figcaption>
+            </figure>
+            <figure class="media-figure">
+              <img
+                src="../../assets/images/mietsumi/web/front-view.png"
+                alt="同じ積み木を低い正面方向から表示している、みえつみの画面"
+                width="480"
+                height="1040"
+                loading="lazy"
+              >
+              <figcaption>
+                見る方向を変えると、重なり方や見える形が変わります。
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section aria-labelledby="shadow-title">
+          <h2 id="shadow-title">光と影の問題での使い方</h2>
+          <p>
+            光と影の問題では、光がどちらから当たっているかと、影がどちらへ伸びるかを考えます。
+          </p>
+          <p>
+            みえつみの「ひかり」をONにすると、光の位置と積み木の影を確認できます。光の位置を動かして、影の向きがどのように変わるかを見比べます。
+          </p>
+          <p>基本的には、光がある方向と反対側に影が伸びます。</p>
+          <ul>
+            <li>光が右側にある → 影は左側へ伸びる</li>
+            <li>光が左側にある → 影は右側へ伸びる</li>
+            <li>光が手前にある → 影は奥側へ伸びる</li>
+          </ul>
+          <figure class="media-figure">
+            <img
+              src="../../assets/images/mietsumi/web/light-shadow.png"
+              alt="積み木の右上に黄色い光源があり、積み木から反対方向へ影が伸びている、みえつみの光と影画面"
+              width="480"
+              height="1040"
+              loading="lazy"
+            >
+            <figcaption>
+              光の位置を動かし、光と反対側へ影が伸びる様子を確認できます。
+            </figcaption>
+          </figure>
+        </section>
+
+        <section aria-labelledby="learning-note">
+          <h2 id="learning-note">学習に使うときのお願い</h2>
+          <p>
+            みえつみは、立体の見え方や考え方を確かめるための補助ツールです。
+          </p>
+          <p>
+            問題を解くときは、最初から画面で答えを確認するのではなく、まず自分で考え、その後で形を作って確かめる使い方をおすすめします。
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-content">
+          <nav class="footer-nav" aria-label="フッターナビゲーション">
+            <a href="../">共通トップ</a>
+            <a href="./">みえつみトップ</a>
+            <a
+              href="mailto:toshirin.support@gmail.com?subject=%5B%E3%81%BF%E3%81%88%E3%81%A4%E3%81%BF%5D%20%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B"
+            >toshirin.support@gmail.com</a>
+          </nav>
+          <div class="footer-meta">
+            <p>© toshirin</p>
+            <nav class="footer-language" aria-label="言語切り替え">
+              <a href="./learning.html" lang="ja" aria-current="page">日本語</a>
+              <span aria-hidden="true">|</span>
+              <a href="../../en/mietsumi/learning.html" lang="en">English</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

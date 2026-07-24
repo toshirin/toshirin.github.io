@@ -125,6 +125,11 @@ a:focus-visible {
   list-style: none;
 }
 
+.mietsumi-nav {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
 .nav-links a {
   display: inline-flex;
   min-height: 2.75rem;
@@ -279,6 +284,233 @@ h1 {
   color: var(--muted);
 }
 
+.support-page {
+  width: min(100% - 2.5rem, 60rem);
+}
+
+.support-header {
+  max-width: 52rem;
+}
+
+.support-header h1 {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+}
+
+.support-content {
+  max-width: 56rem;
+}
+
+.support-content > section {
+  margin-top: clamp(3rem, 7vw, 5rem);
+  scroll-margin-top: 1rem;
+}
+
+.support-content > section:first-child {
+  margin-top: 0;
+}
+
+.support-content h2 {
+  margin: 0 0 1rem;
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+}
+
+.support-content h3 {
+  margin: 2rem 0 0.65rem;
+  font-size: clamp(1.15rem, 2.5vw, 1.35rem);
+}
+
+.support-content p,
+.support-content ul,
+.support-content ol {
+  max-width: 46rem;
+}
+
+.support-content p {
+  margin: 0.8rem 0 0;
+}
+
+.support-content ul,
+.support-content ol {
+  margin-block: 1rem;
+  padding-left: 1.5rem;
+}
+
+.support-content li + li {
+  margin-top: 0.4rem;
+}
+
+.feature-grid,
+.link-card-grid,
+.plan-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.feature-card,
+.link-card,
+.plan-card,
+.notice {
+  padding: clamp(1.25rem, 3vw, 1.65rem);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+}
+
+.feature-card h3,
+.link-card h3,
+.plan-card h2,
+.plan-card h3 {
+  margin-top: 0;
+}
+
+.feature-card p,
+.link-card p,
+.plan-card p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.link-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.link-card a {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 1rem;
+  font-weight: 700;
+}
+
+.media-figure {
+  width: min(100%, 30rem);
+  margin: 1.5rem 0;
+  padding: 0.7rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.85rem;
+}
+
+.media-figure img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.55rem;
+}
+
+.media-figure figcaption {
+  padding: 0.8rem 0.35rem 0.2rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 1rem;
+  max-width: 56rem;
+  margin-top: 1.5rem;
+}
+
+.media-grid .media-figure {
+  width: 100%;
+  margin: 0;
+}
+
+.notice {
+  max-width: 46rem;
+  margin-top: 1.5rem;
+  border-left: 0.3rem solid var(--accent);
+}
+
+.notice p:first-child {
+  margin-top: 0;
+}
+
+.compact-list {
+  columns: 2;
+  column-gap: 2.5rem;
+}
+
+.faq-list {
+  display: grid;
+  gap: 0.75rem;
+  max-width: 48rem;
+  margin-top: 1.25rem;
+}
+
+.faq-list details {
+  padding: 1rem 1.2rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.65rem;
+}
+
+.faq-list summary {
+  min-height: 2.75rem;
+  align-content: center;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.faq-list details p {
+  margin: 0.8rem 0 0;
+  color: var(--muted);
+}
+
+.contact-link {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  font-weight: 700;
+}
+
+.site-footer .footer-inner {
+  align-items: flex-start;
+}
+
+.footer-content {
+  display: grid;
+  gap: 0.65rem;
+  width: 100%;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.25rem;
+}
+
+.footer-nav a {
+  min-height: 2.75rem;
+}
+
+.footer-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid var(--border);
+}
+
+.footer-meta p {
+  margin: 0;
+}
+
+.footer-language {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .site-footer {
   border-top: 1px solid var(--border);
 }
@@ -392,6 +624,10 @@ h1 {
     flex-wrap: wrap;
   }
 
+  .mietsumi-nav {
+    justify-content: flex-start;
+  }
+
   .nav-links a {
     padding-inline: 0.6rem;
   }
@@ -403,6 +639,21 @@ h1 {
   .footer-inner {
     flex-direction: column;
     gap: 0.25rem;
+  }
+
+  .support-page {
+    width: min(100% - 2rem, 60rem);
+  }
+
+  .feature-grid,
+  .link-card-grid,
+  .plan-grid,
+  .media-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .compact-list {
+    columns: 1;
   }
 }
 
