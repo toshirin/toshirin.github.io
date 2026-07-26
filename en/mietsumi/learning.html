@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="Learn how to use MieTsumi to explore block-counting and spatial-view problems, the Antenna, viewing directions, and light and shadow."
+      content="Use MieTsumi with drawings or physical blocks to explore hidden structure, counting, viewpoints, color, and light and shadow."
     >
     <title>Learning with MieTsumi | MieTsumi</title>
     <link rel="stylesheet" href="../../assets/style.css">
@@ -40,173 +40,172 @@
       <header class="hero support-header">
         <p class="eyebrow">Learning with MieTsumi</p>
         <h1>Learning with MieTsumi</h1>
-        <p class="lead">
-          Build and move a model to check your understanding of 3D shapes.
-        </p>
+        <p class="lead">Think with a drawing or physical blocks first, then build and move the model to check.</p>
       </header>
 
       <article class="support-content">
         <section aria-labelledby="learning-intro">
-          <h2 id="learning-intro">Think first, then build and check</h2>
+          <h2 id="learning-intro">Combine hands-on play with a movable model</h2>
           <p>
-            Japanese elementary school entrance examinations for some private and national schools may include block-counting and spatial-view problems.
+            Physical blocks let learners feel how pieces stack and change their own position to look from another side. Drawings ask them to imagine the parts they cannot see.
           </p>
-          <p>MieTsumi does not automatically provide answers to these problems.</p>
           <p>
-            Instead, it supports spatial reasoning practice by letting learners build the same model as a problem and move it to check how the shape works.
+            MieTsumi complements those experiences. Its blocks do not shift or fall, the model can rotate freely, fixed viewpoints are always available, and See-through or Wire can reveal hidden structure.
           </p>
+          <p>It is an open-ended tool, not a lesson, answer generator, or scoring app.</p>
         </section>
 
-        <section aria-labelledby="count-blocks-title">
-          <h2 id="count-blocks-title">Count the blocks</h2>
+        <section aria-labelledby="hidden-block-title">
+          <h2 id="hidden-block-title">Discover a hidden block</h2>
           <p>
-            Block-counting problems may require you to account for blocks hidden beneath or behind other blocks, not only the blocks visible in an illustration.
+            The model below contains five blocks, but only four are visible from the first angle. A blue block is hidden beneath the upper white block.
           </p>
-          <p>
-            First, build the same model and examine it with “Angle.” Then rotate it or switch to “See-through” or “Wire” to check the hidden areas.
-          </p>
-          <div class="media-grid">
+          <ol>
+            <li>Look at the first image and decide whether any blocks may be hidden.</li>
+            <li>Build the same model in MieTsumi.</li>
+            <li>Switch to Back and locate the blue block.</li>
+            <li>Return to Angle and use Wire to inspect the same position.</li>
+          </ol>
+          <div class="media-grid media-grid-three">
             <figure class="media-figure">
               <img
-                src="../../assets/images/mietsumi/web/transparent.png"
-                alt="MieTsumi in See-through mode, with translucent block faces revealing overlapping outlines inside the model"
-                width="480"
-                height="1040"
-                loading="lazy"
+                src="../../assets/images/mietsumi/v04/hidden-angle.jpg"
+                alt="Four white blocks visible from an angle, with a blue block hidden beneath the upper block"
+                width="1112"
+                height="1048"
               >
-              <figcaption>
-                See-through lets you look through the blocks in front to check positions behind them.
-              </figcaption>
+              <figcaption>Start by thinking about the angled view.</figcaption>
             </figure>
             <figure class="media-figure">
               <img
-                src="../../assets/images/mietsumi/web/wireframe.png"
-                alt="MieTsumi in Wire mode, with faint block faces and the shape shown mainly through outlines"
-                width="480"
-                height="1040"
+                src="../../assets/images/mietsumi/v04/hidden-back.jpg"
+                alt="The model from the back, revealing a blue block beneath the upper white block"
+                width="1112"
+                height="1048"
                 loading="lazy"
               >
-              <figcaption>
-                Wire uses outlines to make overlaps easier to examine.
-              </figcaption>
+              <figcaption>Move to the back to reveal the hidden block.</figcaption>
+            </figure>
+            <figure class="media-figure">
+              <img
+                src="../../assets/images/mietsumi/v04/hidden-wire.jpg"
+                alt="The model in Wire mode, revealing the outline and position of the hidden blue block"
+                width="1112"
+                height="1048"
+                loading="lazy"
+              >
+              <figcaption>Use the outlines to examine depth and overlap.</figcaption>
             </figure>
           </div>
+          <p>
+            Color can act as a marker: paint a block to follow it between viewpoints or to make an explanation easier to see.
+          </p>
         </section>
 
         <section id="antenna" aria-labelledby="antenna-title">
-          <h2 id="antenna-title">Count with the Antenna</h2>
+          <h2 id="antenna-title">Count by vertical stacks</h2>
           <p>
-            The Antenna is a visual aid for counting the blocks in each vertical stack.
+            Once the hidden structure is understood, count the blocks in each vertical stack. The Antenna turns each stack height into the same number of short lines.
           </p>
           <p>
-            Short vertical lines appear above the top block of each stack. The number of lines matches the number of blocks in that vertical stack.
-          </p>
-          <p>
-            A stack of two blocks has two lines, while a single block has one. Because children can count the lines one by one without reading numerals, the feature can also be used by young learners who are still becoming familiar with numbers.
+            In this example, one stack has two lines and three stacks have one line each. Together, 2 + 1 + 1 + 1 gives a total of five blocks.
           </p>
           <figure class="media-figure">
             <img
-              src="../../assets/images/mietsumi/web/antenna.png"
-              alt="MieTsumi showing one or two short Antenna lines above each stack to represent its height"
-              width="480"
-              height="1040"
+              src="../../assets/images/mietsumi/v04/antenna.jpg"
+              alt="A block model with one group of two Antenna lines and three single lines, representing five blocks in total"
+              width="1112"
+              height="1048"
               loading="lazy"
             >
-            <figcaption>
-              The number of Antenna lines shows how many blocks are stacked vertically at that position.
-            </figcaption>
+            <figcaption>Add the Antenna lines from every stack: 2 + 1 + 1 + 1 = 5.</figcaption>
           </figure>
-
-          <h3>How to count with the Antenna</h3>
-          <ol>
-            <li>Build the same model as the problem.</li>
-            <li>Turn on “Antenna.”</li>
-            <li>Count the vertical lines above each stack.</li>
-            <li>Add the lines from all stacks to work out the total.</li>
-            <li>Use “See-through” or “Wire” to check when needed.</li>
-          </ol>
           <div class="notice">
-            <p>
-              <strong>The Antenna lines are not blocks.</strong>
-              Do not include the marker lines themselves in the block count.
-            </p>
+            <p><strong>The Antenna lines are not blocks.</strong> Their number represents the height of each vertical stack.</p>
           </div>
         </section>
 
         <section aria-labelledby="directions-title">
-          <h2 id="directions-title">Think about front, side, back, and top views</h2>
+          <h2 id="directions-title">Compare viewpoints and color</h2>
           <p>
-            Some spatial-view problems ask what the same 3D model looks like from the front, back, left, right, or top.
+            The same model creates a different outline from the front, side, and top. Rotate freely to explore, then use a viewpoint preset to make a consistent comparison.
           </p>
           <p>
-            MieTsumi’s view buttons let you examine the model directly from each of these directions.
+            A colored block may also disappear behind or beneath another block. In this example, the blue block comes into view from the left.
           </p>
-          <p>
-            After examining a view, try drawing it on paper without looking at the screen. This can help learners practice changing viewing directions mentally.
-          </p>
-          <div class="media-grid">
+          <div class="media-grid media-grid-three">
             <figure class="media-figure">
               <img
-                src="../../assets/images/mietsumi/web/overview.png"
-                alt="MieTsumi showing five blocks from an angled view"
-                width="480"
-                height="1040"
+                src="../../assets/images/mietsumi/v04/view-front.jpg"
+                alt="The block model from the front, where the blue block is hidden"
+                width="1112"
+                height="1048"
                 loading="lazy"
               >
-              <figcaption>The model seen from an angled view.</figcaption>
+              <figcaption>Front</figcaption>
             </figure>
             <figure class="media-figure">
               <img
-                src="../../assets/images/mietsumi/web/front-view.png"
-                alt="The same MieTsumi block model shown from a low front direction"
-                width="480"
-                height="1040"
+                src="../../assets/images/mietsumi/v04/view-left.jpg"
+                alt="The block model from the left, where the blue block is visible on the lower level"
+                width="1112"
+                height="1048"
                 loading="lazy"
               >
-              <figcaption>
-                Changing the viewing direction changes which blocks overlap and the shape you see.
-              </figcaption>
+              <figcaption>Left</figcaption>
+            </figure>
+            <figure class="media-figure">
+              <img
+                src="../../assets/images/mietsumi/v04/view-top.jpg"
+                alt="The block model from the top, showing four occupied positions"
+                width="1112"
+                height="1048"
+                loading="lazy"
+              >
+              <figcaption>Top</figcaption>
             </figure>
           </div>
         </section>
 
         <section aria-labelledby="shadow-title">
-          <h2 id="shadow-title">Explore light and shadow problems</h2>
+          <h2 id="shadow-title">Compare light and shadow</h2>
           <p>
-            Light and shadow problems ask where light is coming from and which direction the shadow will extend.
+            The Full Version’s Light mode lets you move a light source around the same model and compare the resulting shadows. A shadow generally extends away from the light source.
           </p>
-          <p>
-            Turn on “Light” in MieTsumi to see the light position and the shadows cast by the blocks. Move the light and compare how the direction of the shadows changes.
-          </p>
-          <p>“Light” is available in the Full Version.</p>
-          <p>In general, a shadow extends away from the light source.</p>
-          <ul>
-            <li>Light on the right → shadow extends to the left</li>
-            <li>Light on the left → shadow extends to the right</li>
-            <li>Light in front → shadow extends toward the back</li>
-          </ul>
-          <figure class="media-figure">
-            <img
-              src="../../assets/images/mietsumi/web/light-shadow.png"
-              alt="MieTsumi showing a yellow light source above and to the right of the blocks, with shadows extending in the opposite direction"
-              width="480"
-              height="1040"
-              loading="lazy"
-            >
-            <figcaption>
-              Move the light to see how each shadow extends away from the light source.
-            </figcaption>
-          </figure>
+          <div class="media-grid">
+            <figure class="media-figure">
+              <img
+                src="../../assets/images/mietsumi/v04/shadow-light-right.png"
+                alt="A yellow light source to the right of the blocks, with shadows extending to the left"
+                width="900"
+                height="720"
+                loading="lazy"
+              >
+              <figcaption>Light on the right casts shadows to the left.</figcaption>
+            </figure>
+            <figure class="media-figure">
+              <img
+                src="../../assets/images/mietsumi/v04/shadow-light-left.png"
+                alt="A yellow light source to the left of the blocks, with shadows extending to the right"
+                width="900"
+                height="720"
+                loading="lazy"
+              >
+              <figcaption>Light on the left casts shadows to the right.</figcaption>
+            </figure>
+          </div>
         </section>
 
         <section aria-labelledby="learning-note">
-          <h2 id="learning-note">A note about learning</h2>
-          <p>
-            MieTsumi is a supporting tool for checking how 3D shapes look and how spatial relationships work.
-          </p>
-          <p>
-            When working on a problem, we recommend thinking independently first, then building the model in MieTsumi to check the result.
-          </p>
+          <h2 id="learning-note">A suggested activity sequence</h2>
+          <ol>
+            <li>Think about a drawing or build with physical blocks first.</li>
+            <li>Decide on an answer or prediction.</li>
+            <li>Build the same model in MieTsumi.</li>
+            <li>Use rotation, viewpoints, color, See-through, Wire, or the Antenna as needed.</li>
+            <li>Explain what changed and why.</li>
+          </ol>
+          <p>The goal is to use the movable model to check an idea, not to skip the thinking that comes before it.</p>
         </section>
       </article>
     </main>

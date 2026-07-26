@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="Learn the basics of building, rotating, changing viewpoints and display modes, adding color, and saving photos in MieTsumi."
+      content="Learn how to build, move, inspect, color, count, light, and save a model in MieTsumi."
     >
     <title>User Guide | MieTsumi</title>
     <link rel="stylesheet" href="../../assets/style.css">
@@ -40,156 +40,101 @@
       <header class="hero support-header">
         <p class="eyebrow">MieTsumi Guide</p>
         <h1>User Guide</h1>
-        <p class="lead">
-          Set the number of blocks at each grid position, then move the 3D view to examine the model.
-        </p>
+        <p class="lead">Build a shape, move it, and choose the view that helps you understand it.</p>
       </header>
 
       <article class="support-content">
         <section aria-labelledby="build-title">
-          <h2 id="build-title">1. Build with blocks</h2>
+          <h2 id="build-title">Build a model</h2>
           <p>
-            Tap the cells under “Height (front at bottom)” to set the number of blocks at each position.
+            Tap a cell under “Height (front at bottom)” to set the height of that vertical stack. Each tap moves from zero through the maximum height for the selected size.
           </p>
           <p>
-            Compare the grid with the blocks in the 3D view as you build. The total number of blocks appears below the app name.
+            3×3×3 is available in the Free Version. The Full Version adds 5×5×5 and 7×7×7. Turn on “Show Count” to display the total number of blocks.
           </p>
-          <figure class="media-figure">
+          <figure class="media-figure media-figure-portrait">
             <img
-              src="../../assets/images/mietsumi/web/overview.png"
-              alt="MieTsumi showing five blocks from an angled view with a 3-by-3 grid for entering stack heights"
-              width="480"
-              height="1040"
-              loading="lazy"
+              src="../../assets/images/mietsumi/v04/app-overview-en.png"
+              alt="The English MieTsumi screen showing a five-block model, 3-by-3-by-3 size, and the height-entry grid"
+              width="960"
+              height="2079"
             >
-            <figcaption>
-              Use the height grid to place blocks. The screen can also show the total block count.
-            </figcaption>
+            <figcaption>Set the height of each stack and see the result in the 3D view above.</figcaption>
           </figure>
-        </section>
-
-        <section aria-labelledby="size-title">
-          <h2 id="size-title">2. Choose a size</h2>
-          <p>Choose the available building area from these sizes:</p>
-          <ul class="compact-list">
-            <li>3×3×3</li>
-            <li>5×5×5</li>
-            <li>7×7×7</li>
-          </ul>
-          <p>3×3×3 is available in the Free Version. 5×5×5 and 7×7×7 are available in the Full Version.</p>
         </section>
 
         <section aria-labelledby="move-title">
-          <h2 id="move-title">3. Rotate and zoom</h2>
-          <p>Drag the 3D view to rotate the model freely, and pinch to zoom in or out.</p>
-          <p>Use these gestures to inspect the back of a shape or areas where blocks overlap.</p>
-        </section>
-
-        <section aria-labelledby="view-title">
-          <h2 id="view-title">4. Change the viewing direction</h2>
-          <p>Under “View,” you can switch directly to:</p>
-          <ul class="compact-list">
-            <li>Angle</li>
-            <li>Front</li>
-            <li>Left</li>
-            <li>Right</li>
-            <li>Back</li>
-            <li>Top</li>
-          </ul>
-          <figure class="media-figure">
-            <img
-              src="../../assets/images/mietsumi/web/front-view.png"
-              alt="Blocks shown from a low front direction with buttons for Angled, Front, Left, Right, Back, and Top Views below"
-              width="480"
-              height="1040"
-              loading="lazy"
-            >
-            <figcaption>
-              Examine the same model from the front, sides, back, or top.
-            </figcaption>
-          </figure>
+          <h2 id="move-title">Move around the model</h2>
+          <p>Drag the 3D view to rotate freely. Pinch to zoom in or out.</p>
+          <p>
+            Under “View,” select Angle, Front, Left, Right, Back, or Top. Free rotation helps you explore, while the presets make it easy to compare the model from consistent directions.
+          </p>
+          <p>Select “Reset View” to return to the initial angled position.</p>
         </section>
 
         <section aria-labelledby="display-title">
-          <h2 id="display-title">5. Change the display mode</h2>
-          <p>Under “Display,” choose “Normal,” “See-through,” or “Wire.”</p>
-          <h3>Normal</h3>
-          <p>Shows the faces of each block normally.</p>
-          <h3>See-through</h3>
-          <p>Makes the blocks translucent so that obscured areas are easier to inspect.</p>
-          <figure class="media-figure">
-            <img
-              src="../../assets/images/mietsumi/web/transparent.png"
-              alt="MieTsumi in See-through mode, with translucent block faces revealing overlapping outlines inside the model"
-              width="480"
-              height="1040"
-              loading="lazy"
-            >
-            <figcaption>
-              See-through makes the position of overlapping blocks easier to see.
-            </figcaption>
-          </figure>
-          <h3>Wire</h3>
+          <h2 id="display-title">Inspect hidden areas</h2>
           <p>
-            Focuses on block outlines. Use it to examine the boundaries of a shape and how blocks overlap.
+            Under “Display,” choose Normal, See-through, or Wire. See-through makes the faces translucent, while Wire emphasizes the outlines.
           </p>
-          <figure class="media-figure">
-            <img
-              src="../../assets/images/mietsumi/web/wireframe.png"
-              alt="MieTsumi in Wire mode, with faint block faces and the shape shown mainly through outlines"
-              width="480"
-              height="1040"
-              loading="lazy"
-            >
-            <figcaption>
-              Wire lets you examine a shape through the outlines of its blocks.
-            </figcaption>
-          </figure>
+          <p>
+            When one block hides another, rotate the model first, then use a different display mode to examine the overlap from the original angle.
+          </p>
+          <div class="media-grid">
+            <figure class="media-figure">
+              <img
+                src="../../assets/images/mietsumi/v04/hidden-see-through.jpg"
+                alt="A block model in See-through mode, revealing a hidden blue block through translucent faces"
+                width="1112"
+                height="1048"
+                loading="lazy"
+              >
+              <figcaption>See-through preserves the faces while revealing what is behind them.</figcaption>
+            </figure>
+            <figure class="media-figure">
+              <img
+                src="../../assets/images/mietsumi/v04/hidden-wire.jpg"
+                alt="A block model in Wire mode, showing the outlines and position of a hidden blue block"
+                width="1112"
+                height="1048"
+                loading="lazy"
+              >
+              <figcaption>Wire uses outlines to make overlaps easier to inspect.</figcaption>
+            </figure>
+          </div>
         </section>
 
         <section aria-labelledby="color-title">
-          <h2 id="color-title">6. Add color</h2>
+          <h2 id="color-title">Use color to mark or create</h2>
+          <p>Select a color under “Color,” then tap a block in the 3D view to paint it.</p>
           <p>
-            Choose a color under “Color,” then tap a block in the 3D view to paint it.
+            Color can mark a hidden block, help you follow the same block between viewpoints, organize parts of a model, or become part of a free-form creation.
           </p>
           <p>
-            Coloring blocks by position or height can make the structure easier to organize and understand.
-          </p>
-        </section>
-
-        <section aria-labelledby="count-title">
-          <h2 id="count-title">7. Show the count</h2>
-          <p>Turn on “Show Count” to display the total number of blocks below the app name.</p>
-          <p>
-            See <a href="./learning.html#antenna">Learning with MieTsumi</a> for a detailed explanation of the Antenna.
+            The Free Version includes White, Red, Blue, Yellow, and Green. The Full Version adds Black, Gray, Purple, Cyan, Pink, and Orange. “Reset Colors” returns all blocks to white without changing the arrangement.
           </p>
         </section>
 
-        <section aria-labelledby="reset-title">
-          <h2 id="reset-title">8. Reset colors or positions</h2>
+        <section aria-labelledby="support-display-title">
+          <h2 id="support-display-title">Show the count, Antenna, or light</h2>
+          <p>“Show Count” displays the total number of blocks in the current model.</p>
           <p>
-            “Reset Colors” returns every block to white without changing the arrangement.
+            “Antenna” displays one line for each block in a vertical stack. See <a href="./learning.html#antenna">Learning with MieTsumi</a> for a counting example.
           </p>
           <p>
-            “Reset View” returns the camera to the angled position. When “Light” is on, “Reset Light” returns the light to its initial position.
+            In the Full Version, turn on “Light” to hold the viewpoint while you drag the light source or pinch to change its distance. “Reset Light” returns it to the initial position.
           </p>
         </section>
 
-        <section aria-labelledby="clear-title">
-          <h2 id="clear-title">9. Clear all</h2>
-          <p>“Clear All” removes every placed block and its color.</p>
-          <p>If blocks are present, a confirmation dialog appears before they are removed.</p>
-        </section>
-
-        <section aria-labelledby="photo-title">
-          <h2 id="photo-title">10. Save a photo</h2>
+        <section aria-labelledby="finish-title">
+          <h2 id="finish-title">Save or start again</h2>
           <p>
-            Tap “Photo” to save an image of the current block model to the device’s photo library.
+            In the Full Version, select “Photo” to save a clean image of the 3D creation to the device’s photo library. If the app requests permission to add photos, allow it to continue.
           </p>
-          <p>“Photo” is available in the Full Version.</p>
-          <p>
-            If the app requests permission to add photos, allow it to continue. Saving occurs only when you tap the button, and the image is not sent to the developer.
-          </p>
+          <p>“Clear All” removes every placed block and its color after a confirmation.</p>
+          <div class="notice">
+            <p>An image is saved only when you select Photo. It is not sent to the developer or an external server.</p>
+          </div>
         </section>
       </article>
     </main>

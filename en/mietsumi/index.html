@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="MieTsumi is a learning app for building blocks in 3D and exploring shapes through rotation, fixed views, See-through and Wire displays, the Antenna, and light and shadow."
+      content="MieTsumi is a simple 3D block-building app for exploring hidden blocks, comparing viewpoints, and creating colorful models."
     >
-    <title>MieTsumi | See, Move, and Think with Blocks</title>
+    <title>MieTsumi | Build, Turn, and Discover What Is Hidden</title>
     <link rel="stylesheet" href="../../assets/style.css">
     <link rel="alternate" hreflang="ja" href="../../ja/mietsumi/">
     <link rel="alternate" hreflang="en" href="./">
@@ -48,103 +48,131 @@
         <div>
           <p class="eyebrow">3D Building Blocks</p>
           <h1>MieTsumi</h1>
-          <p class="lead"><strong>See, move, and think with blocks.</strong></p>
+          <p class="lead"><strong>Build, turn, and discover what is hidden.</strong></p>
         </div>
       </header>
 
       <article class="support-content">
         <section aria-labelledby="overview-title">
-          <h2 id="overview-title">Explore 3D shapes from every direction</h2>
+          <h2 id="overview-title">A simple space for exploring and creating</h2>
           <p>
-            MieTsumi is a 3D building-block app that lets you construct models on screen and examine them from different directions.
+            MieTsumi is a 3D block-building app for iPhone and iPad. Set the height of each stack to build a model, then rotate it freely or switch to a fixed viewing direction.
           </p>
           <p>
-            Rotate and zoom freely, or switch instantly to front, left, right, back, and top views. These tools make it easier to examine shapes that can be difficult to understand from a flat illustration alone.
+            Use it to explore blocks hidden behind other blocks, compare how a model looks from different directions, count vertical stacks, or create colorful structures that never slip or fall over.
           </p>
-          <p>
-            MieTsumi can also support learning activities involving block counting, how a shape changes with the viewing direction, and the relationship between light and shadow.
-          </p>
-          <p>The app is available in Japanese and English, based on the device’s preferred language.</p>
-          <figure class="media-figure">
-            <img
-              src="../../assets/images/mietsumi/web/overview.png"
-              alt="MieTsumi showing five blocks from an angled view with a 3-by-3 grid for entering stack heights"
-              width="480"
-              height="1040"
-            >
-            <figcaption>
-              Set the height of each stack on the grid, then examine the result in 3D.
-            </figcaption>
-          </figure>
+          <p>The interface follows the device’s preferred language and is available in English and Japanese.</p>
         </section>
 
-        <section aria-labelledby="features-title">
-          <h2 id="features-title">What you can do</h2>
-          <div class="feature-grid">
-            <section class="feature-card">
-              <h3>Build with blocks</h3>
-              <p>
-                Set a height for each grid position to construct a model. The app can also display the total number of blocks.
-              </p>
-            </section>
-            <section class="feature-card">
-              <h3>View from different directions</h3>
-              <p>
-                Rotate and zoom freely, or switch to Angle, Front, Left, Right, Back, and Top views.
-              </p>
-            </section>
-            <section class="feature-card">
-              <h3>Examine hidden areas</h3>
-              <p>
-                In addition to Normal, use See-through or Wire to inspect obscured blocks and overlaps.
-              </p>
-            </section>
-            <section class="feature-card">
-              <h3>Add color</h3>
-              <p>
-                Select a color and tap individual blocks. Color can make groups and spatial relationships easier to recognize.
-              </p>
-            </section>
-            <section class="feature-card">
-              <h3>Count with the Antenna</h3>
-              <p>
-                Short vertical lines appear above each stack. The number of lines matches the number of blocks in that stack.
-              </p>
-            </section>
-            <section class="feature-card">
-              <h3>Move light and shadow</h3>
-              <p>
-                In the Full Version, move the light source to see how the direction and shape of each shadow changes.
-              </p>
-            </section>
-            <section class="feature-card">
-              <h3>Save a photo</h3>
-              <p>In the Full Version, save an image of your block model to the device’s photo library.</p>
-            </section>
+        <section aria-labelledby="hidden-title">
+          <h2 id="hidden-title">Find the block you cannot see</h2>
+          <p>
+            The model below contains five blocks. Only four are visible from the first angle because a blue block is hidden beneath the upper white block.
+          </p>
+          <p>
+            Switch to Back to reveal it, or use Wire to inspect the same position from the original angle.
+          </p>
+          <div class="media-grid media-grid-three">
+            <figure class="media-figure">
+              <img
+                src="../../assets/images/mietsumi/v04/hidden-angle.jpg"
+                alt="Four white blocks visible from an angle, with a blue block hidden beneath the upper block"
+                width="1112"
+                height="1048"
+              >
+              <figcaption>The blue block is hidden from this angle.</figcaption>
+            </figure>
+            <figure class="media-figure">
+              <img
+                src="../../assets/images/mietsumi/v04/hidden-back.jpg"
+                alt="The same model from the back, revealing a blue block beneath a white block"
+                width="1112"
+                height="1048"
+                loading="lazy"
+              >
+              <figcaption>From the back, the hidden block becomes visible.</figcaption>
+            </figure>
+            <figure class="media-figure">
+              <img
+                src="../../assets/images/mietsumi/v04/hidden-wire.jpg"
+                alt="The same model in Wire mode, showing the outline and position of the hidden blue block"
+                width="1112"
+                height="1048"
+                loading="lazy"
+              >
+              <figcaption>Wire reveals its position from the original angle.</figcaption>
+            </figure>
           </div>
         </section>
 
+        <section aria-labelledby="explore-title">
+          <h2 id="explore-title">Ways to explore a model</h2>
+          <div class="feature-grid">
+            <section class="feature-card">
+              <h3>Look behind and inside</h3>
+              <p>Rotate the model, make its faces translucent with See-through, or focus on its outlines with Wire.</p>
+            </section>
+            <section class="feature-card">
+              <h3>Compare viewing directions</h3>
+              <p>Move freely, or switch directly to Angle, Front, Left, Right, Back, and Top to compare the model from consistent directions.</p>
+            </section>
+            <section class="feature-card">
+              <h3>Use color as a marker</h3>
+              <p>Color a block to follow it from one viewpoint to another, explain a hidden position, or organize parts of a model.</p>
+            </section>
+            <section class="feature-card">
+              <h3>Count by vertical stacks</h3>
+              <p>The Antenna displays one line for each block in a vertical stack, providing another way to work out the total.</p>
+            </section>
+            <section class="feature-card">
+              <h3>Compare light and shadow</h3>
+              <p>In the Full Version, move the light source and observe how each shadow extends away from it.</p>
+            </section>
+          </div>
+          <p><a href="./learning.html">Explore learning activities →</a></p>
+        </section>
+
+        <section aria-labelledby="creative-title">
+          <h2 id="creative-title">Build freely without blocks falling over</h2>
+          <p>
+            A virtual building area makes it easy to use more blocks than may be practical to keep at home, add color without painting physical blocks, and build stable models without pieces shifting or collapsing.
+          </p>
+          <p>
+            The Full Version adds 5×5×5 and 7×7×7 building areas, more colors, and the ability to save a clean image of a creation to the photo library.
+          </p>
+          <figure class="media-figure media-figure-wide">
+            <img
+              src="../../assets/images/mietsumi/v04/creation-child.jpg"
+              alt="A large fort-like creation with gray walls, a yellow rim, and red, green, blue, and white details"
+              width="1112"
+              height="1048"
+              loading="lazy"
+            >
+            <figcaption>A child’s creation recreated in v0.4. Photo saves the model as an image.</figcaption>
+          </figure>
+        </section>
+
         <section aria-labelledby="details-title">
-          <h2 id="details-title">Learn more</h2>
+          <h2 id="details-title">Support information</h2>
           <div class="link-card-grid">
             <article class="link-card">
               <h3>User Guide</h3>
-              <p>Learn how to place blocks, change views and display modes, add color, and save photos.</p>
+              <p>Learn how to build, move, color, inspect, and save a model.</p>
               <a href="./guide.html">Read the user guide →</a>
             </article>
             <article class="link-card">
               <h3>Learning with MieTsumi</h3>
-              <p>Learn ways to explore block counts, viewing directions, the Antenna, and light and shadow.</p>
+              <p>Explore hidden blocks, counting, viewpoints, color, and light and shadow.</p>
               <a href="./learning.html">Explore learning activities →</a>
             </article>
             <article class="link-card">
               <h3>Free and Full Versions</h3>
-              <p>See which features are available in the Free and Full Versions.</p>
-              <a href="./plans.html">View Free and Full Versions →</a>
+              <p>Compare the core exploration tools with the creative and saving features added by the Full Version.</p>
+              <a href="./plans.html">Compare versions →</a>
             </article>
             <article class="link-card">
               <h3>Privacy Policy</h3>
-              <p>Read how the app handles data and saved images.</p>
+              <p>Read how the app handles model data, photos, purchases, and support messages.</p>
               <a href="./privacy.html">Read the privacy policy →</a>
             </article>
           </div>
@@ -154,63 +182,59 @@
           <h2 id="faq-title">Frequently asked questions</h2>
           <div class="faq-list">
             <details>
-              <summary>What is the Antenna?</summary>
-              <p>
-                It is a visual aid for counting blocks in each vertical stack. Short lines appear above the top block, and the number of lines matches the number of blocks in that stack.
-              </p>
+              <summary>Does MieTsumi include lessons or automatic scoring?</summary>
+              <p>No. MieTsumi is an open-ended tool for building and examining models. It does not provide problem sets, answers, or automatic scoring.</p>
+            </details>
+            <details>
+              <summary>Is MieTsumi a replacement for physical blocks?</summary>
+              <p>No. Physical blocks provide valuable hands-on experience. MieTsumi complements them with free rotation, fixed viewpoints, See-through, and Wire.</p>
             </details>
             <details>
               <summary>What is the difference between See-through and Wire?</summary>
-              <p>
-                See-through makes block faces translucent. Wire focuses on outlines. Both can help reveal hidden areas and overlapping blocks.
-              </p>
+              <p>See-through makes block faces translucent. Wire focuses on outlines. Both help reveal hidden blocks and overlaps.</p>
+            </details>
+            <details>
+              <summary>What is the Antenna?</summary>
+              <p>It is a counting aid. Lines appear above each vertical stack, and the number of lines matches the number of blocks in that stack.</p>
+            </details>
+            <details>
+              <summary>What can I use in the Free Version?</summary>
+              <p>The Free Version includes 3×3×3, basic colors, rotation and zoom, fixed viewpoints, Normal, See-through, Wire, the total count, and the Antenna. See <a href="./plans.html">Free and Full Versions</a> for details.</p>
             </details>
             <details>
               <summary>Does MieTsumi require an internet connection?</summary>
-              <p>
-                Building and rotating models generally does not require one. In-app purchases, restoring purchases, and opening support pages may require a connection.
-              </p>
+              <p>Building and exploring models generally does not require one. Purchasing, restoring a purchase, and opening support pages may require a connection.</p>
             </details>
             <details>
               <summary>Where are saved images stored?</summary>
-              <p>
-                When the user taps “Photo,” the image is saved to the device’s photo library. It is not sent to the developer.
-              </p>
+              <p>In the Full Version, Photo saves an image to the device’s photo library. The image is not sent to the developer.</p>
             </details>
             <details>
               <summary>Does MieTsumi collect usage data?</summary>
-              <p>
-                MieTsumi does not use advertising, usage analytics, user accounts, or location collection. See the <a href="./privacy.html">Privacy Policy</a> for details.
-              </p>
+              <p>MieTsumi does not use advertising, behavioral analytics, user accounts, or location collection. See the <a href="./privacy.html">Privacy Policy</a> for details.</p>
             </details>
             <details>
-              <summary>Does the app include problem sets or automatic scoring?</summary>
-              <p>
-                No. MieTsumi is a tool for building the same shape as a problem and checking spatial relationships. It does not provide problem sets or automatic scoring.
-              </p>
-            </details>
-            <details>
-              <summary>Which devices are supported?</summary>
-              <p>MieTsumi supports iPhone and iPad running iOS or iPadOS 15 or later.</p>
+              <summary>Which devices and languages are supported?</summary>
+              <p>MieTsumi supports iPhone and iPad running iOS or iPadOS 15 or later. The interface is available in English and Japanese.</p>
             </details>
           </div>
         </section>
 
         <section aria-labelledby="contact-title">
           <h2 id="contact-title">Contact</h2>
-          <p>For questions about problems or how to use MieTsumi, contact:</p>
+          <p>For help with a bug, purchase, or use of MieTsumi, contact:</p>
           <p>
             <a
               class="contact-link"
               href="mailto:toshirin.support@gmail.com?subject=%5BMieTsumi%5D%20Support%20Request"
             >toshirin.support@gmail.com</a>
           </p>
-          <p>When reporting a screen or behavior issue, include the following when possible:</p>
+          <p>When reporting a problem, include the following when possible:</p>
           <ul>
             <li>Device model</li>
             <li>iOS or iPadOS version</li>
             <li>MieTsumi version</li>
-            <li>Steps that led to the issue</li>
+            <li>Steps leading to the problem</li>
             <li>A screenshot of the screen</li>
           </ul>
           <p>Do not send personal information or images showing other people.</p>

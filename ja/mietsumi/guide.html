@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="みえつみで積み木を組み立て、回転、視点切り替え、透明表示、色付け、写真保存を行う基本操作を説明します。"
+      content="みえつみで形を作り、回転や視点、表示方法、色、アンテナ、光、写真保存を目的に合わせて使う方法を説明します。"
     >
     <title>基本的な使い方｜みえつみ</title>
     <link rel="stylesheet" href="../../assets/style.css">
@@ -40,162 +40,103 @@
       <header class="hero support-header">
         <p class="eyebrow">MieTsumi Guide</p>
         <h1>基本的な使い方</h1>
-        <p class="lead">
-          各マスに積む個数を指定して形を作り、3D表示を動かして確かめます。
-        </p>
+        <p class="lead">形を作り、動かし、必要な表示を選んで確かめます。</p>
       </header>
 
       <article class="support-content">
         <section aria-labelledby="build-title">
-          <h2 id="build-title">1. 積み木を組み立てる</h2>
-          <p>「たかさ（下が手前）」のマスをタップして、それぞれの場所に積む個数を指定します。</p>
+          <h2 id="build-title">形を作る</h2>
           <p>
-            入力したマスの位置と、3D画面上の積み木の位置を見比べながら形を作ります。積み木の合計個数は、アプリ名の下に表示されます。
+            「たかさ（下が手前）」のマスをタップし、その場所に積む個数を指定します。マスの数字は0から現在の大きさの上限まで順に変わります。
           </p>
-          <figure class="media-figure">
+          <p>
+            3×3×3は無料版で利用できます。フル版では5×5×5と7×7×7へ広げられます。「かずを表示」をONにすると、積み木の合計個数も確認できます。
+          </p>
+          <figure class="media-figure media-figure-portrait">
             <img
-              src="../../assets/images/mietsumi/web/overview.png"
-              alt="5個の積み木を斜め上から表示し、高さ入力用の3×3のマスが並んでいる、みえつみの画面"
-              width="480"
-              height="1040"
-              loading="lazy"
+              src="../../assets/images/mietsumi/v04/app-overview-ja.png"
+              alt="みえつみの日本語画面。5個の積み木と、3×3×3の大きさ、高さを指定するマスが表示されている"
+              width="960"
+              height="2079"
             >
-            <figcaption>
-              高さのマスを使って積み木を配置します。画面では合計個数も確認できます。
-            </figcaption>
+            <figcaption>マスごとの高さを指定すると、上の3D表示に形が反映されます。</figcaption>
           </figure>
-        </section>
-
-        <section aria-labelledby="size-title">
-          <h2 id="size-title">2. 大きさを選ぶ</h2>
-          <p>積み木を置く範囲は、次の大きさから選択できます。</p>
-          <ul class="compact-list">
-            <li>3×3×3</li>
-            <li>5×5×5</li>
-            <li>7×7×7</li>
-          </ul>
-          <p>3×3×3は無料版で利用できます。5×5×5と7×7×7はフル版で利用できます。</p>
         </section>
 
         <section aria-labelledby="move-title">
-          <h2 id="move-title">3. 回転・拡大する</h2>
+          <h2 id="move-title">立体を動かして見る</h2>
+          <p>3D表示をドラッグすると自由に回転でき、ピンチすると拡大・縮小できます。</p>
           <p>
-            3D表示をドラッグすると積み木を自由に回転でき、ピンチ操作で拡大・縮小できます。
+            「してん」では、「ななめ」「しょうめん」「ひだり」「みぎ」「うしろ」「まうえ」へ切り替えられます。自由に動かして全体をつかみ、問題で方向が決まっているときはプリセットで確かめます。
           </p>
-          <p>形の奥側や、積み木が重なっている部分を確かめたいときに利用します。</p>
-        </section>
-
-        <section aria-labelledby="view-title">
-          <h2 id="view-title">4. 見る方向を切り替える</h2>
-          <p>「してん」では、次の方向へすぐに切り替えられます。</p>
-          <ul class="compact-list">
-            <li>ななめ</li>
-            <li>しょうめん</li>
-            <li>ひだり</li>
-            <li>みぎ</li>
-            <li>うしろ</li>
-            <li>まうえ</li>
-          </ul>
-          <figure class="media-figure">
-            <img
-              src="../../assets/images/mietsumi/web/front-view.png"
-              alt="積み木を低い正面方向から表示し、その下に斜め、正面、左、右、後ろ、真上の視点ボタンが並ぶ画面"
-              width="480"
-              height="1040"
-              loading="lazy"
-            >
-            <figcaption>
-              同じ積み木を正面や左右、後ろ、真上などから確認できます。
-            </figcaption>
-          </figure>
+          <p>「してんを戻す」を押すと、最初の斜めの位置へ戻ります。</p>
         </section>
 
         <section aria-labelledby="display-title">
-          <h2 id="display-title">5. 表示方法を変える</h2>
-          <p>「ひょうじ」では、「つうじょう」「すける」「せん」の3種類を切り替えられます。</p>
-          <h3>つうじょう</h3>
-          <p>積み木の面を通常どおり表示します。</p>
-          <h3>すける</h3>
+          <h2 id="display-title">隠れた部分を確かめる</h2>
           <p>
-            積み木を半透明にして、手前の積み木に隠れている部分を確認しやすくします。
+            「ひょうじ」では、「つうじょう」「すける」「せん」を選べます。「すける」は面を半透明にし、「せん」は輪郭を中心に表示します。
           </p>
-          <figure class="media-figure">
-            <img
-              src="../../assets/images/mietsumi/web/transparent.png"
-              alt="積み木が半透明になり、重なった内部の輪郭が見えている、みえつみの透け表示"
-              width="480"
-              height="1040"
-              loading="lazy"
-            >
-            <figcaption>
-              「すける」では、重なった積み木の位置関係を確認しやすくなります。
-            </figcaption>
-          </figure>
-          <h3>せん</h3>
           <p>
-            積み木の輪郭を中心に表示します。立体の境界や重なり方を確認するときに利用できます。
+            手前の積み木で奥が見えないときは、立体を回すだけでなく、表示方法も切り替えて位置関係を確かめます。
           </p>
-          <figure class="media-figure">
-            <img
-              src="../../assets/images/mietsumi/web/wireframe.png"
-              alt="積み木の面が薄くなり、輪郭線を中心に形が表示されている、みえつみの線表示"
-              width="480"
-              height="1040"
-              loading="lazy"
-            >
-            <figcaption>
-              「せん」では、積み木の輪郭を使って形を確かめられます。
-            </figcaption>
-          </figure>
+          <div class="media-grid">
+            <figure class="media-figure">
+              <img
+                src="../../assets/images/mietsumi/v04/hidden-see-through.jpg"
+                alt="すける表示で、積み木の面を通して隠れた青い積み木が見えている"
+                width="1112"
+                height="1048"
+                loading="lazy"
+              >
+              <figcaption>「すける」は面を残しながら奥を見通します。</figcaption>
+            </figure>
+            <figure class="media-figure">
+              <img
+                src="../../assets/images/mietsumi/v04/hidden-wire.jpg"
+                alt="せん表示で、積み木の輪郭と隠れた青い積み木の位置が見えている"
+                width="1112"
+                height="1048"
+                loading="lazy"
+              >
+              <figcaption>「せん」は輪郭を使って重なりを確かめます。</figcaption>
+            </figure>
+          </div>
         </section>
 
         <section aria-labelledby="color-title">
-          <h2 id="color-title">6. 色を付ける</h2>
+          <h2 id="color-title">色を目印や作品づくりに使う</h2>
+          <p>「いろ」で色を選び、3D表示の積み木をタップすると、その積み木を塗れます。</p>
           <p>
-            「いろ」で色を選び、3D画面の積み木をタップすると、その積み木を選んだ色で塗れます。
+            隠れた積み木や注目したい積み木に色を付けると、位置を説明しやすくなります。色付き積み木を別の方向から見る問題や、自由な作品づくりにも利用できます。
           </p>
           <p>
-            位置ごとに色を分けたり、同じ高さの積み木を同じ色にしたりすると、形を整理して考えやすくなります。
-          </p>
-        </section>
-
-        <section aria-labelledby="count-title">
-          <h2 id="count-title">7. 数を表示する</h2>
-          <p>
-            「かずを表示」をONにすると、アプリ名の下に積み木の合計個数が表示されます。
-          </p>
-          <p>
-            アンテナについては<a href="./learning.html#antenna">積み木問題での使い方</a>で詳しく説明します。
+            無料版では白、赤、青、黄、緑を利用できます。フル版では黒、灰、紫、水色、桃、橙が加わります。「いろを戻す」を押すと、配置を変えずにすべて白へ戻せます。
           </p>
         </section>
 
-        <section aria-labelledby="reset-title">
-          <h2 id="reset-title">8. 色や位置を元に戻す</h2>
+        <section aria-labelledby="support-display-title">
+          <h2 id="support-display-title">数、アンテナ、光を表示する</h2>
+          <p>「かずを表示」は、現在置かれている積み木の合計個数を表示します。</p>
           <p>
-            「いろを戻す」を押すと、積み木の配置を変えずに、すべての積み木を白へ戻します。
+            「アンテナ」は、縦の各列に積まれた個数と同じ本数の線を表示します。詳しい数え方は<a href="./learning.html#antenna">積み木問題での使い方</a>をご覧ください。
           </p>
           <p>
-            「してんを戻す」は視点を斜めの位置へ戻します。「ひかりを戻す」は光を初期の位置へ戻します。
-          </p>
-        </section>
-
-        <section aria-labelledby="clear-title">
-          <h2 id="clear-title">9. 全部消す</h2>
-          <p>「ぜんぶ消す」を利用すると、配置した積み木と色をすべて削除できます。</p>
-          <p>
-            積み木が置かれている場合は、「ぜんぶ消しますか？」という確認画面が表示されます。
+            フル版の「ひかり」では、視点を固定したままドラッグで光源を動かし、ピンチで距離を変えられます。「ひかりを戻す」で最初の位置へ戻ります。
           </p>
         </section>
 
-        <section aria-labelledby="photo-title">
-          <h2 id="photo-title">10. 写真に保存する</h2>
+        <section aria-labelledby="finish-title">
+          <h2 id="finish-title">作品を保存する・作り直す</h2>
           <p>
-            「しゃしん」を押すと、現在表示している積み木を画像として写真ライブラリへ保存できます。
+            フル版の「しゃしん」を押すと、操作ボタンを除いた3D作品の画像を写真ライブラリへ保存できます。初回に写真への追加許可が表示された場合は、保存を続けるために許可してください。
           </p>
-          <p>「しゃしん」はフル版で利用できます。</p>
           <p>
-            初回に写真への追加許可が表示された場合は許可してください。保存は利用者がボタンを押したときだけ行われ、画像が開発者へ送信されることはありません。
+            「ぜんぶ消す」は、配置した積み木と色をすべて削除します。積み木がある場合は確認画面が表示されます。
           </p>
+          <div class="notice">
+            <p>写真は利用者が「しゃしん」を押したときだけ保存され、開発者や外部サーバーへ送信されません。</p>
+          </div>
         </section>
       </article>
     </main>

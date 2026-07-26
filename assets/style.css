@@ -387,12 +387,20 @@ h1 {
 }
 
 .media-figure {
-  width: min(100%, 14rem);
+  width: min(100%, 32rem);
   margin: 1.5rem 0;
   padding: 0.7rem;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 0.85rem;
+}
+
+.media-figure-portrait {
+  width: min(100%, 14rem);
+}
+
+.media-figure-wide {
+  width: min(100%, 36rem);
 }
 
 .media-figure img {
@@ -414,8 +422,13 @@ h1 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: start;
   gap: 1rem;
-  max-width: 22.5rem;
+  max-width: 46rem;
   margin-top: 1.5rem;
+}
+
+.media-grid-three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  max-width: 56rem;
 }
 
 .media-grid .media-figure {
