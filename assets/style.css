@@ -239,6 +239,7 @@ h1 {
 
 .app-card-links {
   display: flex;
+  width: 100%;
   flex-wrap: wrap;
   align-items: center;
   gap: 0.75rem 1.25rem;
@@ -247,6 +248,10 @@ h1 {
 
 .app-card-links > a:first-child {
   margin-top: 0;
+}
+
+.app-card-links .app-store-badge-link {
+  margin-left: auto;
 }
 
 .app-store-badge-link {
@@ -346,7 +351,7 @@ h1 {
 }
 
 .store-qr {
-  flex: 0 0 9rem;
+  flex: 0 0 8rem;
   text-align: center;
 }
 
@@ -357,8 +362,8 @@ h1 {
 
 .store-qr img {
   display: block;
-  width: 9rem;
-  height: 9rem;
+  width: 8rem;
+  height: 8rem;
   border-radius: 0.45rem;
 }
 
